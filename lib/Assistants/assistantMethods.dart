@@ -79,9 +79,6 @@ class AssistantMethods
     double distancTraveledFare = (directionDetails.distanceValue / 1000) * 0.20;
     double totalFareAmount = timeTraveledFare + distancTraveledFare;
 
-    //Local Currency
-    //1$ = 160 RS
-    //double totalLocalAmount = totalFareAmount * 160;
 
     return totalFareAmount.truncate();
   }
